@@ -13,7 +13,7 @@ import cucumber.api.java.es.Entonces;
 
 public class EscenariosEjemploStepDefinition {
 
-  @Cuando("^(?:que |)(.*) selecciona el boton Next$")
+  @Cuando("^(.*) selecciona el boton Next$")
   public void seleccionaBotonSiguiente(String nombreActor) {
     theActorCalled(nombreActor).attemptsTo(Seleccionar.boton(BTN_NEXT));
   }
